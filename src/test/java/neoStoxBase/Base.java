@@ -16,7 +16,9 @@ public class Base
 		System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		
 		driver.get("https://neostox.com/");
+		
 		Utility.implicitWait(1000, driver);
 		Reporter.log("launching browser", true);
 	
